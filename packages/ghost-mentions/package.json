@@ -1,0 +1,55 @@
+{
+  "name": "ghost-mentions",
+  "version": "0.1.0",
+  "description": "A lightweight mentions system for React with shadcn/ui and Tailwind CSS",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/styles/mention.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "mentions",
+    "textarea",
+    "react",
+    "shadcn",
+    "tailwind",
+    "ui",
+    "headless"
+  ],
+  "author": "Richard S.",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "@radix-ui/react-dialog": "^1.0.5"
+  },
+  "devDependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@testing-library/react": "^14.2.1",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "jsdom": "^24.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  }
+}

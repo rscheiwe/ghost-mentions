@@ -1,0 +1,31 @@
+{
+  "name": "ghost-mentions",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Lightweight, textarea-first mentions system for shadcn + Vercel AI",
+  "scripts": {
+    "dev": "pnpm --parallel -r dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r clean"
+  },
+  "keywords": [
+    "mentions",
+    "textarea",
+    "shadcn",
+    "tailwind",
+    "react",
+    "ai-elements"
+  ],
+  "author": "Richard S.",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
