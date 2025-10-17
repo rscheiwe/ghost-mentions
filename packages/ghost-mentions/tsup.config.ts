@@ -6,5 +6,15 @@ export default defineConfig({
   dts: true,
   sourcemap: true,
   clean: true,
-  external: ["react", "react-dom", "@radix-ui/react-dialog"],
+  external: [
+    "react",
+    "react-dom",
+    "@radix-ui/react-dialog",
+    "@radix-ui/react-dropdown-menu",
+  ],
+  esbuildOptions(options) {
+    options.banner = {
+      js: '"use client";',
+    };
+  },
 });
